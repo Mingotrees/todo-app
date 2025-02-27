@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+input:focus {
+    outline: none;
+}
+
+input {
+    transition: width 0.2s ease;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+textarea{
+    overflow: hidden;
+    resize: none;
+}
