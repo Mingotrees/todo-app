@@ -16,3 +16,9 @@ textarea{
     overflow: hidden;
     resize: none;
 }
+
+@layer utilities{
+    .item-container{
+        @apply flex m-2 justify-between rounded-2xl p-2
+    }
+}
