@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todo-app</title>
-    <link href="./assets/styles.css" rel="stylesheet">
-</head>
-<body>
-    <div class="w-screen h-screen flex justify-center items-center flex-col bg-amber-50">
-        <div class="bg-[#28282B] w-75 sm:w-[500px] rounded-md p-1" id="card-container">
-            <div class="item-container bg-amber-400">
-                <input type="text" placeholder="Enter your work cuh" class="w-[80%] placeholder-gray-700" id="input-box">
-                <button type="submit" class="flex justify-center w-[15%] pb-1 font-bold text-3xl rounded-2xl bg-amber-50 text-red-950 hover:-translate-y-[0.1rem] transition-transform duration-300 cursor-pointer" id="add">+</button>
-            </div>
-
-            <div class="flex-col" id="todo-item-container">
-                <!-- <div class="item-container bg-amber-200" id="todo-item">
-                    <div class="flex justify-center items-center">
-                        <input type="checkbox" name="task-complete" id="complete-btn" class="appearance-none w-4 h-4 bg-white checked:bg-green-400  text rounded-2xl
-                        ">
-                        <h2 class="ml-2">Run 200m</h2>
-                    </div>
-                    <button id="del-btn"class="appearance-none w-9 h-8 cursor-pointer p-1 hover:bg-red-300 transition ease-in duration-300 rounded-2xl">
-                        <img src="./assets/imgs/delete.svg">
-                    </button>
-                </div> -->
-            </div>
+    <link href="./assets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="w-screen h-screen flex justify-center items-center flex-col bg-amber-50"
+    >
+      <div
+        class="bg-[#28282B] w-75 sm:w-[500px] rounded-md p-1"
+        id="card-container"
+      >
+        <div class="item-container bg-amber-400">
+          <input
+            type="text"
+            placeholder="Enter your work cuh"
+            class="w-[80%] placeholder-gray-700"
+            id="input-box"
+          />
+          <button
+            type="submit"
+            class="flex justify-center w-[15%] pb-1 font-bold text-3xl rounded-2xl bg-amber-50 text-red-950 hover:-translate-y-[0.1rem] transition-transform duration-300 cursor-pointer"
+            id="add"
+          >
+            +
+          </button>
         </div>
+
+        <div class="flex-col" id="todo-item-container">
+          <div
+            class="item-container flex max-w-full overflow-hidden bg-amber-200"
+            id="todo-item"
+          >
+            <div class="flex items-center max-w-full">
+              <input
+                type="checkbox"
+                name="task-complete"
+                class="complete-btn appearance-none w-4 h-4 bg-white checked:bg-green-400 text rounded-2xl flex-shrink-0"
+              />
+              <h2 class="ml-2 todo-label">${todoString}</h2>
+            </div>
+            <div class="flex justify-center items-center max-w-full">
+              <button
+                class="edit-btn appearance-none cursor-pointer w-7 p-1 hover:bg-blue-300 transition ease-in duration-300 rounded-2xl"
+              >
+                <img src="./assets/imgs/edit.svg" />
+              </button>
+              <button
+                class="del-btn appearance-none cursor-pointer w-6 hover:bg-red-300 transition ease-in duration-300 rounded-2xl"
+              >
+                <img src="./assets/imgs/delete.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/script.js"></script>
-</body>
+  </body>
 </html>
