@@ -21,4 +21,28 @@ textarea{
     .item-container{
         @apply flex m-2 justify-between rounded-2xl p-2
     }
+
+    .scrollbar-thin {
+        scrollbar-width: thin;
+        scrollbar-color: #d1d5db #1f2937;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-track {
+    background: #1f2937;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: #d1d5db;
+        border-radius: 4px;
+        border: 2px solid #1f2937;
+    }
+
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
 }

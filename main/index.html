@@ -8,10 +8,10 @@
   </head>
   <body>
     <div
-      class="w-screen h-screen flex justify-center items-center flex-col bg-amber-50"
+      class="w-screen h-screen flex justify-center items-center flex-col bg-amber-50 overflow-scroll"
     >
       <div
-        class="bg-[#28282B] w-75 sm:w-[500px] rounded-md p-1"
+        class="bg-[#28282B] w-75 h-fit m-5 sm:w-[500px] rounded-md p-1 overflow-auto scrollbar-thin"
         id="card-container"
       >
         <div class="item-container bg-amber-400">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="flex-col" id="todo-item-container">
-          <div
+          <!-- <div
             class="item-container flex max-w-full overflow-hidden bg-amber-200"
             id="todo-item"
           >
@@ -55,7 +55,7 @@
                 <img src="./assets/imgs/delete.svg" />
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
